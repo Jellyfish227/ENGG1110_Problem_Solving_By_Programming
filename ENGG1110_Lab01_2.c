@@ -22,9 +22,8 @@
  */
 
 #include <stdio.h>
-
 int main(void) {
-
-    printf("Hello ENGG1110!");
+    printf("H\n e\n  l\n   l\n    o\n");
+    printf("E\n N\n  G\n   G\n    1\n     1\n      1\n       0\n        !\n");
     return 0;
 }
