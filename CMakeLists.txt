@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.24)
+project(ENGG1110_Code C)
+
+set(CMAKE_C_STANDARD 23)
+
+add_library(ENGG1110_Code ENGG1110_Lab01_1.c)
