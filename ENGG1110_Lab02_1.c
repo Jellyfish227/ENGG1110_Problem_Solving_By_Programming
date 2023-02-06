@@ -40,6 +40,7 @@ int main(void){
 
     printf("max %d\n", max);
     printf("min %d", min);
+
 }
 /*
 #include <stdio.h>
