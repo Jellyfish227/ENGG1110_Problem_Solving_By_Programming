@@ -23,6 +23,7 @@
 
 #include <stdio.h>
 int main(void){
+
     int a, b, c, d;
     scanf("%d",&a);
     scanf("%d",&b);
