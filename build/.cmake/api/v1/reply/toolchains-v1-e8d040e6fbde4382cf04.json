@@ -1,0 +1,52 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin22/12/include",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin22/12/include-fixed",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks"
+					],
+					"linkDirectories" : 
+					[
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/aarch64-apple-darwin22/12",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current/gcc",
+						"/opt/homebrew/Cellar/gcc/12.2.0/lib/gcc/current",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib"
+					],
+					"linkFrameworkDirectories" : 
+					[
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks"
+					],
+					"linkLibraries" : 
+					[
+						"emutls_w",
+						"gcc",
+						"gcc"
+					]
+				},
+				"path" : "/opt/homebrew/bin/aarch64-apple-darwin22-gcc-12",
+				"version" : "12.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
