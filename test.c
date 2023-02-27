@@ -23,77 +23,91 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
+//#include <stdlib.h>
+//
+//char board[3][3] = {{' ', ' ', ' '},
+//                    {' ', ' ', ' '},
+//                    {' ', ' ', ' '}};
+//
+//void display_board() {
+//    printf("\n");
+//    printf(" %c | %c | %c\n", board[0][0], board[0][1], board[0][2]);
+//    printf("---+---+---\n");
+//    printf(" %c | %c | %c\n", board[1][0], board[1][1], board[1][2]);
+//    printf("---+---+---\n");
+//    printf(" %c | %c | %c\n", board[2][0], board[2][1], board[2][2]);
+//    printf("\n");
+//}
+//
+//int check_win() {
+//    int i;
+//
+//    // Check rows
+//    for (i = 0; i < 3; i++) {
+//        if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ')
+//            return 1;
+//    }
+//
+//    // Check columns
+//    for (i = 0; i < 3; i++) {
+//        if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != ' ')
+//            return 1;
+//    }
+//
+//    // Check diagonals
+//    if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != ' ')
+//        return 1;
+//    if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ')
+//        return 1;
+//
+//    // Check for draw
+//    for (i = 0; i < 3; i++) {
+//        int j;
+//        for (j = 0; j < 3; j++) {
+//            if (board[i][j] == ' ')
+//                return -1;
+//        }
+//    }
+//
+//    return 0;
+//}
+//
+//int main(void) {
+//    int player = 1;
+//    int row, col;
+//
+//    while (1) {
+//        display_board();
+//        printf("Player %d, enter row and column: ", player);
+//        scanf("%d%d", &row, &col);
+//
+//        if (row >= 0 && row < 3 && col >= 0 && col < 3) {
+//            if (board[row][col] == ' ') {
+//                board[row][col] = (player == 1) ? 'X' : 'O';
+//                int win = check_win();
+//                if (win == 1) {
+//                    printf("Player %d wins!\n", player);
+//                    break;
+//                } else if (win == 0) {
+//                    printf("Draw!\n");
+//                    break;
+//                }
+//                player = (player == 1) ? 2 : 1;
+//            }
+//        }
+//    }
+//}
 
-char board[3][3] = {{' ', ' ', ' '},
-                    {' ', ' ', ' '},
-                    {' ', ' ', ' '}};
+int main(void){
+    int n = 0;
+    for (int i = -5; i <= 9; i+=2)
+    {
 
-void display_board() {
-    printf("\n");
-    printf(" %c | %c | %c\n", board[0][0], board[0][1], board[0][2]);
-    printf("---+---+---\n");
-    printf(" %c | %c | %c\n", board[1][0], board[1][1], board[1][2]);
-    printf("---+---+---\n");
-    printf(" %c | %c | %c\n", board[2][0], board[2][1], board[2][2]);
-    printf("\n");
-}
+        putchar('*');
+        n++;
 
-int check_win() {
-    int i;
+        i--;
 
-    // Check rows
-    for (i = 0; i < 3; i++) {
-        if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ')
-            return 1;
     }
-
-    // Check columns
-    for (i = 0; i < 3; i++) {
-        if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != ' ')
-            return 1;
-    }
-
-    // Check diagonals
-    if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != ' ')
-        return 1;
-    if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ')
-        return 1;
-
-    // Check for draw
-    for (i = 0; i < 3; i++) {
-        int j;
-        for (j = 0; j < 3; j++) {
-            if (board[i][j] == ' ')
-                return -1;
-        }
-    }
-
-    return 0;
-}
-
-int main(void) {
-    int player = 1;
-    int row, col;
-
-    while (1) {
-        display_board();
-        printf("Player %d, enter row and column: ", player);
-        scanf("%d%d", &row, &col);
-
-        if (row >= 0 && row < 3 && col >= 0 && col < 3) {
-            if (board[row][col] == ' ') {
-                board[row][col] = (player == 1) ? 'X' : 'O';
-                int win = check_win();
-                if (win == 1) {
-                    printf("Player %d wins!\n", player);
-                    break;
-                } else if (win == 0) {
-                    printf("Draw!\n");
-                    break;
-                }
-                player = (player == 1) ? 2 : 1;
-            }
-        }
-    }
+    printf("%d", n);
 }
