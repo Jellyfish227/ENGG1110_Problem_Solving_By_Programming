@@ -23,6 +23,7 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 //#include <stdlib.h>
 //
 //char board[3][3] = {{' ', ' ', ' '},
@@ -98,16 +99,12 @@
 //    }
 //}
 
+
+
 int main(void){
-    int n = 0;
-    for (int i = -5; i <= 9; i+=2)
-    {
 
-        putchar('*');
-        n++;
 
-        i--;
+//    sscanf(&a, "%d", &b);
+    printf("%d", (int)4.5);
 
-    }
-    printf("%d", n);
 }
