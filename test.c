@@ -103,8 +103,17 @@
 
 int main(void){
 
+    int a = 32;
+    int* P = &a;
 
-//    sscanf(&a, "%d", &b);
-    printf("%d", (int)4.5);
+
+    printf("%d\n", a);
+    printf("%p\n", &a);
+    printf("%p\n", P);
+    printf("%d\n", *P);
+    printf("%d\n", *&a);
+
+
+
 
 }
