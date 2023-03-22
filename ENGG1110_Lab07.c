@@ -59,7 +59,7 @@ int main(void){
 }
 
 
-//
+
 //#include <stdio.h>
 //
 //int checkSymmetricMatrix( int matrix[16][16],  int size ){
