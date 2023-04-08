@@ -99,21 +99,23 @@
 //    }
 //}
 
+//int a = 32;
+//    int* P = &a;
+//
+//
+//    printf("%d\n", a);
+//    printf("%p\n", &a);
+//    printf("%p\n", P);
+//    printf("%d\n", *P);
+//    printf("%d\n", *&a);
+
 
 
 int main(void){
+    char buf[20], temp[20];
 
-    int a = 32;
-    int* P = &a;
-
-
-    printf("%d\n", a);
-    printf("%p\n", &a);
-    printf("%p\n", P);
-    printf("%d\n", *P);
-    printf("%d\n", *&a);
-
-
+    fgets(buf, 20, stdin);
 
 
 }
+
