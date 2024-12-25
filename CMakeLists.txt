@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
-project(ENGG1110_Code C)
+project(Project C)
 
-set(CMAKE_C_STANDARD 23)
+set(CMAKE_C_STANDARD 17)
 
-add_library(ENGG1110_Code ENGG1110_Lab02.c test.c ENGG1110_Lab03.c ENGG1110_Lab04.c ENGG1110_Lab05.c ENGG1110_Lab06.c ENGG1110_Lab07.c ENGG1110_Lab08.c ENGG1110_Lab09.c)
+add_executable(Project project_1155193237.c)

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libENGG1110_Code.a CMakeFiles/ENGG1110_Code.dir/ENGG1110_Lab02.c.o CMakeFiles/ENGG1110_Code.dir/test.c.o CMakeFiles/ENGG1110_Code.dir/ENGG1110_Lab03.c.o
-/usr/bin/ranlib libENGG1110_Code.a
